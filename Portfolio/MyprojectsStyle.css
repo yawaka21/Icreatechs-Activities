@@ -1,0 +1,57 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+    background-color:#201C1C ;
+    color: white;
+}
+.My{
+    font-size: 50px;
+    text-align: center;
+}
+.main{
+    margin-left: 60px;
+   
+    width: 1190px;
+}
+.div1{
+    width:500px;
+  
+    height: 100px;
+}
+.zone-logo{
+    width: 250px;
+    position: absolute;
+    margin-left: 30px;
+}
+.main-class
+{
+ 
+  width: 300px;
+   
+}
+.grid-pic
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.main-picture
+{
+    width: 300px;
+    height: 300px;
+   
+}
+
+.grid-main
+{ 
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   column-gap: 20px;
+  row-gap: 20px;
+}
+.dis1{
+    font-weight: bold; 
+    font-size: 20px; 
+    text-align: center;
+}

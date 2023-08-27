@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zone</title>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="Main2.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="account-logo.css">
+</head>
+<body>
+
+        <div class="div1">
+            <img class="zone-logo" src="logo/Zone-Logo.png" alt="">
+        </div>
+
+        <!-- MAIN START -->
+    <div class="main-body">
+
+            <!-- First -->
+            <div class="main">
+                <div class="discription-main">
+                    <div><p class="c1">Creative</p></div>
+                    <div class="div-c2"><p class="c2">We are Zone, We are dedicated to empowering brands and individuals by crafting 
+                        visually stunning, impactful, and purpose-driven designs.</p></div>
+                </div>
+                
+                <div class="discription-main1">
+                    <div class="c3">
+                        <p class="es">Establish</p>
+                        <p class="year">2023</p>
+                    </div>
+            
+                    <div class="c4">
+                        <p class="digi">Digital Agency</p>
+                    </div>
+                <div class="button-div">
+                    <a href="Commingsoon.html">  <button class="dis-button">Get in touch</button> </a>
+                   
+                </div>
+                </div>
+        
+            </div>
+  
+            <!-- End -->
+
+
+            <!-- Second-Main -->
+            <div class="main2">
+                
+                <div class="bot-main1">
+                   <a href="about.html"> <button class="bot1">About Us</button> </a>
+                    <a href="testimonial.html"> <button class="bot1">Vision</button></a>
+                   <a href="Myprojects.html">  <button class="bot1">My Project</button> </a>
+                   <a href="vision.html"> <button class="bot2">Client Say</button> </a>
+                </div>
+                
+                <div class="slide-pictures">
+                    <img class="pictures" src="Slide-picture/Rectangle 4.png" alt="">
+                    <img class="pictures" src="Slide-picture/pic2.jpg" alt="">
+                    <img class="pictures" src="Slide-picture/pic3.jpg" alt="">
+                </div>
+            </div>
+            
+            <div class="main3">
+                <div class="logo">
+                    <div class="logopicture">  <img src="Account-logo/Instagram.gif" alt=""> </div>
+                    <div class="logodiscription"><p>Instagram</p></div> 
+                  
+                </div>
+                
+                <div class="logo">
+                    <div class="logopicture">  <img src="Account-logo/Instagram.gif" alt=""> </div>
+                    <div class="logodiscription"><p>Instagram</p></div> 
+                  
+                </div>
+                <div class="logo">
+                    <div class="logopicture"><img src="Account-logo/tiktok.gif" alt=""></div>
+                    <div class="logodiscription"><p>Tiktok</p></div> 
+                    
+                </div>
+                <div class="logo">
+                    <div class="logopicture"> <img src="Account-logo/facebook.gif" alt=""> </div>
+                    <div class="logodiscription"><p>Facebook</p></div> 
+                    
+                </div>
+                
+            </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("pictures");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+                </script>
+         </div>
+   
+</body>
+</html>

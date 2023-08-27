@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vision.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div class="container">
+       
+    </div>
+     
+    <div class="main">
+       
+        <a href="Main.html"><button class="home"> <img class="house" src="HOME/HOME.gif" alt="">Home</button></a>
+               <div><p class="test">TESTIMONIALS</p> </div>
+        <div class="maintes">
+            <div class="tesmonial">
+                <div class="profile">
+                    
+                </div>
+
+              
+              
+                <div class="tesdip">
+                    <p>ZONE design tech prowess is unparalleled. His insights fuel innovation, and his solutions are game-changers. A true tech visionary! </p>
+                </div>
+                
+            </div>
+
+            <div class="tesmonial">
+                <div class="profile">
+                    
+                </div>
+              
+                <div class="tesdip">
+                    <p>Zone creative genius in graphic design is awe-inspiring. Each design is a masterpiece that captures attention and leaves a lasting impression. Working with Mark is a design journey like no other.</p>
+                </div>
+                
+            </div>
+            <div class="tesmonial">
+                <div class="profile">
+                    
+                </div>
+              
+                <div class="tesdip">
+                    <p>ZONE graphic design skills are a work of art. His ability to bring concepts to life through visuals is unmatched. Collaborating with Mark means elevating your brand with design excellence</p>
+                </div>
+                
+            </div>
+            
+        </div>
+           
+        </div>
+    </div>
+    
+
+<script src="anime.js"></script>
+<script>
+    const container = document.querySelector('.container')
+    for (var i = 0; i <= 50; i++){
+        const blocks = document.createElement('div');
+        blocks.classList.add('block');
+        container.appendChild(blocks)
+    }
+    function animeBlocks(){
+    anime({
+        targets: '.block',
+        translateX: function(){
+            return anime.random(-700,700)
+        },
+        translateX: function(){
+            return anime.random(-500,500)
+        },
+          scale: function(){
+            return anime.random(1,5)
+        },
+        easing: 'linear',
+        duration:3000,
+        delay:anime.stagger(10),
+        complete:  animeBlocks,
+    })
+}
+animeBlocks()
+</script>
+</body>
+</html>

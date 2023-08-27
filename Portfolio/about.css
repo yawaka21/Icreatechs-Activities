@@ -1,0 +1,68 @@
+body{
+    background-color: #201C1C;
+    font-family: 'Roboto';
+    color: white;
+}
+.image-container{
+    width: 300px;
+
+
+}
+.logo{
+    width: 100%;
+
+}
+.mainbody
+{
+     
+    margin-left: 60px;
+    width: 1190px; 
+}
+.p1{
+   
+    width: 700px;
+    font-size: 30px;
+}
+.image{
+    width: 300px;
+  
+    display: inline-block;
+}
+.logo2{
+    width: 800px;
+    margin-left: 200px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 20px;
+    
+}
+.p2{
+    font-size: 30px;
+}
+.p22{
+    width: 600px;
+    margin-left: 300px;
+}
+.but{
+    height: 100px;
+    width: 253px;
+    background: #DC7458;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+}
+.but:hover
+{
+    cursor: pointer;
+    background-color: rgb(209, 81, 46) ;
+}
+.butclass
+{
+    position:absolute;
+    margin-left: 810px;
+    
+    margin-bottom:20px;
+    margin-top: 20px;
+}

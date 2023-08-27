@@ -1,0 +1,32 @@
+.logopicture{
+    width: 50px;
+    display: inline-block;
+}
+img
+{
+    width: 100%;
+}
+.main3
+{
+    margin-top: 50px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 50px;
+}
+.logodiscription{
+    
+    display: inline-block;
+}
+
+.logo{
+    
+    width: 150px;
+    margin-left: 50px;
+   
+}
+.logodiscription {
+    margin: 0px;
+   position: absolute;
+  
+}

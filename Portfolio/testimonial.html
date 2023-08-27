@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="testimonial.css">
+</head>
+<body>
+    <div class="container">
+       
+    </div>
+    <a href="Main.html"><button class="home"> <img class="house" src="HOME/HOME.gif" alt="">Home</button></a>
+    <div class="glow">
+        <span>V</span>
+        <span>I</span>
+        <span>S</span>
+        <span>I</span>
+        <span>O</span>
+        <span>N</span>
+    </div>
+
+    <div class="woop">Navigating Tomorrow's Tech Landscape Today</div>
+    <script src="anime.js"></script>
+<script>
+    const container = document.querySelector('.container')
+    for (var i = 0; i <= 50; i++){
+        const blocks = document.createElement('div');
+        blocks.classList.add('block');
+        container.appendChild(blocks)
+    }
+    function animeBlocks(){
+    anime({
+        targets: '.block',
+        translateX: function(){
+            return anime.random(-700,700)
+        },
+        translateX: function(){
+            return anime.random(-500,500)
+        },
+          scale: function(){
+            return anime.random(1,5)
+        },
+        easing: 'linear',
+        duration:3000,
+        delay:anime.stagger(10),
+        complete:  animeBlocks,
+    })
+}
+animeBlocks()
+</script>
+</body>
+</html>
